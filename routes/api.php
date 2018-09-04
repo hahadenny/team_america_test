@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('agency', 'AgencyController@store');
+Route::post('agency', 'AgencyController@store');
 
 Route::get('report/{datetype}/{from}/{to}', 'ReportController@results');
 
