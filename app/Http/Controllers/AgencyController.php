@@ -40,10 +40,10 @@ class AgencyController extends Controller
         $agency->city = isset($request->city) && $request->city ? $request->city : '';
         $agency->state = isset($request->state) && $request->state ? $request->state : '';
         $agency->ZIP = isset($request->ZIP) && $request->ZIP ? $request->ZIP : '';
-        $agency->country = isset($request->country) && $request->country ? $request->country : '';
+        $agency->country = isset($request->country) && $request->country ? $request->country : 0;
         $agency->email = isset($request->email) && $request->email ? $request->email : '';
         $agency->URL = isset($request->URL) && $request->URL ? $request->URL : '';
-        $agency->active = isset($request->active) && $request->active ? $request->active : '';
+        $agency->active = isset($request->active) && $request->active ? $request->active : 0;
         $agency->registereddate = date('Y-m-d');
         $agency->save();
 
